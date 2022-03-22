@@ -31,6 +31,8 @@ console.log(ris);
 
 if(ris==i){
     alert("HAI VINTO!");
+    document.writeln(HAI VINTO!);
 } else{
     alert("HAI PERSO!");
+    document.writeln(HAI PERSO!);
 }
