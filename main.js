@@ -10,22 +10,25 @@ do{
         i=0;
         bool = false; //pari
     }
-} while(i);
+} while(bool);
 
 let num;
 do{
     num = prompt("Scegliere un numero compreso tra 1 e 9");
 } while(num > 9 || num < 1);
 
+let ris;
 
 function randomIntFromInterval(min, max) { // min and max included 
     return Math.floor(Math.random() * (max - min + 1) + min)
   }
   
-  const numRandom = randomIntFromInterval(1, 9);
+  let numRandom = randomIntFromInterval(1, 9);
   console.log(numRandom);
 
-ris = numRandom%2; //restituisce 1 o 0
+ris = (numRandom + num) % 2; //restituisce 1 o 0
+console.log(ris);
+
 if(ris==i){
     alert("HAI VINTO!");
 } else{
